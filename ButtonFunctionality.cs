@@ -1,3 +1,13 @@
+/*
+THe button functionality is the script for making the menu in the main menu scene 
+functional where the user has three options: 
+1. Going to a random environment 
+2. Selecting a particular environment
+    A desert or a forest
+3. Quitting the program 
+
+*/
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
