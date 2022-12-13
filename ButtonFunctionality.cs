@@ -3,12 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class ButtonFunctionality : MonoBehaviour
 {
+    //Creating instance objects of the class
     [SerializeField]
     private GameObject MainButtons;
     [SerializeField]
     private GameObject SelectionButtons;
 
-
+//The chooser button is activated when the user chooses to select from the enviroments rather than selecting a random enviroment
     public void Chooser()
     {
 
@@ -16,7 +17,8 @@ public class ButtonFunctionality : MonoBehaviour
         SelectionButtons.SetActive(true);
 
     }
-
+//The backbutton function is when the user chooses to go back from the selecting scenes menu to the main menu where they can choose between quitting, random scene
+//or choosing a scene
     public void BackButton()
     {
 
@@ -27,7 +29,8 @@ public class ButtonFunctionality : MonoBehaviour
 
     public void Randomize()
     {
-
+    
+        //A random method built in c# using Random.Range
         int numb;
         numb = Random.Range(0, 2);
         if (numb == 0)
@@ -41,6 +44,7 @@ public class ButtonFunctionality : MonoBehaviour
 
     }
 
+    //If the user wants to quit progam, it closes the application 
     public void Quit()
     {
 
@@ -48,6 +52,8 @@ public class ButtonFunctionality : MonoBehaviour
 
     }
 
+
+    //These two buttons load the selected scene. 
     public void ForestButton()
     {
 
